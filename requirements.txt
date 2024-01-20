@@ -1,0 +1,17 @@
+numpy
+jupyter
+matplotlib
+scipy
+scikit-learn
+seaborn
+pandas
+pytest
+pytest-pycodestyle
+testfixtures
+flask
+requests
+pymodm
+dnspython
+Pillow
+scikit-image
+tk
