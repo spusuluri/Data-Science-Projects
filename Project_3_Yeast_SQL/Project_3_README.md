@@ -57,7 +57,7 @@ This project involves the analysis of gene expression data in a MySQL database. 
 13. **LIKE**
 14. **FROM**
 15. **WHERE**
-16 **GROUP BY**
+16. **GROUP BY**
 17. **ORDER BY**
 18. **LIMIT**
 19. **DESC**
