@@ -162,3 +162,16 @@ SELECT
 FROM
     sc_expression
 GROUP BY sc_expression.gene;
+-- Rank each gene based on their 'IFFABF' values
+SELECT
+    gene,
+    IFFABF,
+    RANK() OVER (ORDER BY IFFABF DESC) AS expression_rank
+FROM
+    sc_expression;
+-- Calculate the average expression for each gene under 'IFFABF' conditions
+SELECT
+    gene,
+    AVG(IFFABF) OVER (PARTITION BY gene) AS avg_expression
+FROM
+    sc_expression;

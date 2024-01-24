@@ -44,24 +44,20 @@ This project involves the analysis of gene expression data in a MySQL database. 
 
 1. **SELECT**
 2. **UPDATE**
-3. **COUNT(*)**
+3. **Aggregation Functions**
 4. **JOIN**
 5. **CASE**
-6. **MAX**
-7. **DISTINCT**
-8. **UNION**
-9. **CROSS JOIN**
-10. **GROUP BY**
-11. **HAVING**
-12. **BETWEEN**
-13. **LIKE**
-14. **FROM**
-15. **WHERE**
-16. **GROUP BY**
-17. **ORDER BY**
-18. **LIMIT**
-19. **DESC**
-20. **Wildcards**
+6. **DISTINCT**
+7. **UNION**
+8. **CROSS JOIN**
+9. **GROUP BY**
+10. **HAVING**
+11. **BETWEEN**
+12. **ORDER BY**
+13. **LIMIT**
+14. **DESC**
+15. **Wildcards**
+16. **Window Functions**
 
 ## Conclusion 
 
