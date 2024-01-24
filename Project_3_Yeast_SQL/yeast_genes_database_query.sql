@@ -1,3 +1,10 @@
+-- Update table with NULL where there is no molecular function defined
+UPDATE labels_MF 
+SET 
+    labels_MF.function = NULL
+WHERE
+    labels_MF.function = '';
+
 -- How many genes are in the dataset? 
 SELECT 
     COUNT(*)
@@ -36,8 +43,6 @@ FROM
     new_conditions_annotation
 GROUP BY new_conditions_annotation.secondary
 ORDER BY num_second DESC;
---
--- Which distinct primary conditions use different strains? 
 SELECT DISTINCT
     (new_conditions_annotation.ID)
 FROM
@@ -121,7 +126,7 @@ SELECT
     new_conditions_annotation.primary
 FROM
     new_conditions_annotation 
-UNION SELECT -- UNION removes duplicates
+UNION SELECT 
     new_conditions_annotation.secondary
 FROM
     new_conditions_annotation;
@@ -157,4 +162,3 @@ SELECT
 FROM
     sc_expression
 GROUP BY sc_expression.gene;
-
